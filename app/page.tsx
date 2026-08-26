@@ -514,7 +514,7 @@ export default function Home() {
       root.rotation.y = p * Math.PI * 0.55;
       blueLight.intensity = 10 + (1 - p) * 8;
       orangeLight.intensity = 5 + p * 10;
-      scene.fog.density = 0.03 - p * 0.01;
+      // scene.fog.density = 0.03 - p * 0.01;
 
       const pos = particleGeo.attributes.position.array as Float32Array;
       for (let i = 0; i < particleCount; i++) {
